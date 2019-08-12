@@ -4,11 +4,12 @@ last modified: August 16th, 2019
 
 # Dependencies
 
-((I would recommend creating a virtual environment to install all the dependencies and run the notebook))
-Package to install:
-folium,sklearn, pandas,numpy,matplotlib ,scipy
+I would recommend creating a virtual environment to install all the dependencies and run the notebook.
 
-# Content of zip
+Packages to install:
+folium, sklearn, pandas, numpy, matplotlib, scipy
+
+# Content
 
 -AddDataToGaussian.ipynb : Most important part. Adjust files, find peaks and run gaussian mixture. See instructions below.
 
@@ -32,7 +33,7 @@ folium,sklearn, pandas,numpy,matplotlib ,scipy
 
 -Put bike data in dataBikeOldDelayed with format sync_data_YYYY-MM-DD.csv
 We need latitude, longitude, UTC time, CH_4 concentration in ppm, wind speed and wind direction.
--Put bike data in dataTruck with format sync_data_YYYY-MM-DD_Truck.csv
+-Put truck data in dataTruck with format sync_data_YYYY-MM-DD_Truck.csv
 -The 2 other directories will be filled by the notebook
 
 
