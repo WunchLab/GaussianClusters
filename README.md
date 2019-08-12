@@ -31,9 +31,11 @@ folium, sklearn, pandas, numpy, matplotlib, scipy
 
 ++Get data from dataverse (https://dataverse.scholarsportal.info/dataverse/wunchlab):
 
--Put bike data in dataBikeOldDelayed with format sync_data_YYYY-MM-DD.csv
-We need latitude, longitude, UTC time, CH_4 concentration in ppm, wind speed and wind direction.
--Put truck data in dataTruck with format sync_data_YYYY-MM-DD_Truck.csv
+-Put bike data in dataBikeOldDelayed with format sync_data_YYYY-MM-DD.csv  
+We need latitude, longitude, UTC time, CH_4 concentration in ppm, wind speed and wind direction.  
+
+-Put truck data in dataTruck with format sync_data_YYYY-MM-DD_Truck.csv  
+
 -The 2 other directories will be filled by the notebook
 
 
@@ -41,19 +43,21 @@ We need latitude, longitude, UTC time, CH_4 concentration in ppm, wind speed and
 
 #AddDataToGaussian.ipynb 
 
-There is 2 ways to use AddDataToGaussianCluster.ipynb:
-1. First time built. Take all data, make adjusted, find peaks and build map. Use when dataBike and areaPeaks directories are empty.
+There is 2 ways to use AddDataToGaussianCluster.ipynb:  
 
-2. Adding one or a small number of days to the already built map. Use to be quick when most of the dates have already been through 1. dataBike and areaPeaks directory have most data and you just want to add one file.
+1. First time built. Take all data, make adjusted, find peaks and build map. Use when dataBike and areaPeaks directories are empty.  
 
-For both ways, you only need to modify the 4th cell of the notebook. Then, Kernel--Restart & Run All.
+2. Adding one or a small number of days to the already built map. Use to be quick when most of the dates have already been through 1. dataBike and areaPeaks directory have most data and you just want to add one file.  
+
+For both ways, you only need to modify the 4th cell of the notebook. Then, Kernel--Restart & Run All.  
+
 1. 
-filesToBeAdjusted= [f  for f in listdir(delayedPath) if isfile(join(delayedPath, f)) and f[-3:]=="csv" ] # every day
-files = [f  for f in listdir(mypath) if isfile(join(mypath, f)) and f[-3:]=="csv" ]
+filesToBeAdjusted= [f  for f in listdir(delayedPath) if isfile(join(delayedPath, f)) and f[-3:]=="csv" ] # every day  
+files = [f  for f in listdir(mypath) if isfile(join(mypath, f)) and f[-3:]=="csv" ]  
 
 2.
-filesToBeAdjusted=['sync_data_2019-07-31.csv']
-files =['sync_data_2019-07-31.csv']
+filesToBeAdjusted=['sync_data_2019-07-31.csv']  
+files =['sync_data_2019-07-31.csv']  
 
 
 You can also change the type of transport( bike or truck).
