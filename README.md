@@ -1,5 +1,5 @@
 ## README
-author: Juliette Lavoie
+author: Juliette Lavoie  
 last modified: August 16th, 2019
 
 # Dependencies
