@@ -2,6 +2,10 @@
 author: Juliette Lavoie  
 last modified: August 16th, 2019
 
+#What is this repository for?
+
+This repository creates the Gaussian Cluster map. It takes in the raw data from the airmar and lgr and finds the peaks in methane concentration. Then, it uses a Gaussian Mixture algorithm to do a cluster analysis on the position on the peaks. The final html file shows the different clusters, their potential source and known facilities that emit methane.
+
 # Dependencies
 
 I would recommend creating a virtual environment to install all the dependencies and run the notebook.
